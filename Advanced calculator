@@ -1,0 +1,21 @@
+try:
+
+    num1 = float(input("Enter a number: "))
+    num2 = float(input("Enter a  second number: "))
+    operator = input ("do you want to (divide) (multiply) (subtract) (add)?: ")
+    if operator == 'divide':
+        print(num1/num2)
+    elif operator == 'multiply':
+        print (num1*num2)
+    elif operator == 'subtract':
+        print (num1-num2)
+    elif operator == 'add':
+        print (num1+num2)
+
+except ValueError:
+    print ("you cant enter letters into the program")
+except ZeroDivisionError:
+    print ("you cant divide by zero")
+
+print ("calculation complete")
+
